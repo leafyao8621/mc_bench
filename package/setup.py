@@ -12,8 +12,7 @@ blas =\
         library_dirs=[
             "/mnt/vault/mc_bench/lib/blas"
         ],
-        libraries=["mcbenchblas", "blis"],
-        extra_link_args=["-pthread"]
+        libraries=["mcbenchblas", "blis"]
     )
 
 cublas =\
@@ -27,8 +26,7 @@ cublas =\
         library_dirs=[
             "/mnt/vault/mc_bench/lib/cublas"
         ],
-        libraries=["mcbenchcublas", "cublas", "cudart"],
-        extra_link_args=["-pthread"]
+        libraries=["mcbenchcublas", "cublas", "cudart"]
     )
 
 setup(
