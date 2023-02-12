@@ -12,7 +12,7 @@ blas =\
         library_dirs=[
             "/mnt/vault/mc_bench/lib/blas"
         ],
-        libraries=["mcbenchblas", "openblas"],
+        libraries=["mcbenchblas", "blis"],
         extra_link_args=["-pthread"]
     )
 

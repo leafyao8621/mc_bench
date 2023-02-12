@@ -12,7 +12,7 @@ $(LIB): $(OBJ)
 	cp src/mc_bench_blas.h ../../include
 
 $(BIN): $(LIB)
-	$(CPP) src/test.cpp -o $(BIN) -I ../../include -lmcbenchblas -pthread -lopenblas
+	$(CPP) src/test.cpp -o $(BIN) -I ../../include -lmcbenchblas -pthread -lblis
 
 .PHONY: clean
 clean:
